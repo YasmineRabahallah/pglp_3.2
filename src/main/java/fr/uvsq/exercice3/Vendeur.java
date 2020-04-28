@@ -7,38 +7,39 @@ package fr.uvsq.exercice3;
  *
  */
 
-public class Vendeur  implements salaire {
+public class Vendeur  implements Salaire {
   /**
    * une commission d'un vendeur.
    */
 
-  private double commission ;
+  private double commission;
   /**
-   * annee_anc :année d’ancienneté.
+   * anneAnc :année d’ancienneté.
    */
 
-  private int annee_anc ;
+  private int anneeAnc;
   /**
-   * salaire_base.
+   * salaireBase.
    */
 
-  private double salaire_base =1500 ;
+  private double salaireBase = 1500;
   /**
+   * constructeur Vendeur.
    * 
-   * @param annee_anc année d’ancienneté.
+   * @param anneeAnc année d’ancienneté.
    * @param commission une commission d'un vendeur.
    */
 
-  public Vendeur (int annee_anc , double commission){
-    this.annee_anc=annee_anc ;
-    this.commission=commission;
+  public Vendeur(int anneeAnc,double commission) {
+    this.anneeAnc = anneeAnc;
+    this.commission = commission;
   }
 
   /**
    *  methode pour calcule salaire d'un vendeur.
    */
   public double calcule_salaire() {
-    return (salaire_base+(20*annee_anc))+commission;
+    return (salaireBase + (20 * anneeAnc)) + commission;
   }
 
 

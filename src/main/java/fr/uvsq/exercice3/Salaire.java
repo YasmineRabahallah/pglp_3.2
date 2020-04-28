@@ -1,14 +1,14 @@
 package fr.uvsq.exercice3;
 
 /**
- * interface salaire.
+ * interface Salaire.
  * 
  * @author rabahallah yasmine.
  *
  */
 
-public interface salaire {
-	
+public interface Salaire {
+
   public abstract double calcule_salaire();
 
 }

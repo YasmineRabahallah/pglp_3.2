@@ -7,33 +7,34 @@ package fr.uvsq.exercice3;
  *
  */
 
-public  class Emp  implements salaire {
+public  class Emp  implements Salaire {
   /**
-   * annee_anc : année d’ancienneté.
+   * anneeAnc : année d’ancienneté.
    */
-  private int annee_anc ;
+  private int anneeAnc;
 
   /**
-   * salaire_base Le salaire d’un employé.
+   * salairebase Le salaire d’un employé.
    */
 
-  private double salaire_base =1500 ;
+  private double salaireBase = 1500;
 
   /**
+   * constructeur Emp.
    * 
-   * @param annee_anc  année d’ancienneté.
+   * @param anneeAnc  année d’ancienneté.
    */
 
-  public Emp (int annee_anc){
-    this.annee_anc=annee_anc ;
+  public Emp(int anneeAnc) {
+    this.anneeAnc = anneeAnc;
   }
 
   /**
    * methose pour calculer le salaire.
    */
 
-  public  double calcule_salaire(){
-    return salaire_base+(20*annee_anc) ;
+  public  double calcule_salaire() {
+    return salaireBase + (20 * anneeAnc);
 
   }
 }

@@ -9,24 +9,27 @@ package fr.uvsq.exercice3;
 
 public class Manager {
   /**
-   * salaire_base d'un manager.
-   */
-  private double salaire_base =1500 ;
-  /**
-   * nb_emp nombre des employés.
+   * salaireBase d'un manager.
    */
 
-  private int nb_emp ;
-  public Manager ( int nb_emp){
-    this.nb_emp=nb_emp;
+  private double salaireBase = 1500;
+  /**
+   * nbEmp nombre des employés.
+   */
+
+  private int nbEmp;
+
+  public Manager(int nbEmp) {
+    this.nbEmp = nbEmp;
   }
   
   /**
+   * methode pour calculer le salaire.
    * 
    * @return le salaire d'un manager.
    */
-  public  double calcule_salaire(){
-    return salaire_base+(100*nb_emp) ;
+  public  double calcule_salaire() {
+    return salaireBase + (100 * nbEmp);
   }
 
 }

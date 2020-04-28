@@ -15,7 +15,7 @@ public class Entreprise {
    * liste des salaires.
    */
 
-  ArrayList<salaire>  salaire  = new ArrayList<salaire>();
+  ArrayList<Salaire>  salaire  = new ArrayList<Salaire>();
 
   public Entreprise(){
   }
@@ -24,8 +24,9 @@ public class Entreprise {
    * 
    * @param s salaire
    */
-  public void ajoute_s(salaire s) {
-    salaire.add(s)	;
+
+  public void ajoute_s(Salaire s) {
+    salaire.add(s);
   }
 
   /**
@@ -33,9 +34,9 @@ public class Entreprise {
    * 
    * @return salaires total.
    */
-  public double somme_total(){
-    double sal=0 ;
-    for ( salaire b :salaire ){
+  public double somme_total() {
+    double sal = 0;
+    for (Salaire b :salaire) {
       sal += b.calcule_salaire();
     }
     return sal;
